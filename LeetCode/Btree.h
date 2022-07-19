@@ -20,6 +20,7 @@ private:
 
 public:
 	void CreateBTree();
+	void test();
 
 	//µİ¹é±éÀú
 	void RecrusionNLR() const;

@@ -1,6 +1,23 @@
 #include <iostream>
 #include "Btree.h"
 
+void Btree::test() {
+	this->CreateBTree();
+
+	cout << "递归：" << endl;
+	this->RecrusionNLR();   cout << endl;
+	this->RecrusionLNR();	cout << endl;
+	this->RecrusionLRN();	cout << endl;
+
+	cout << "非递归：" << endl;
+	this->nonRecrusionNLR();	cout << endl;
+	this->nonRecrusionLNR();	cout << endl;
+	this->nonRecrusionLRN();	cout << endl;
+
+	cout << "层序：" << endl;
+	this->LevelOrder();		cout << endl;
+}
+
 //创建二叉树，#表示空节点，按照前序输入满树
 void _CreateBTree(BiTree& T) {
 	char data;

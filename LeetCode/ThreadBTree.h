@@ -13,7 +13,7 @@ typedef struct ThreadBTNode {
 	struct ThreadBTNode* Rchild;
 	bool Ltag;
 	bool Rtag;
-}ThreadBTNode, *TBTree;
+}ThreadBTNode, * TBTree;
 
 class ThreadBTree
 {
@@ -22,11 +22,17 @@ private:
 
 public:
 	void CreateTBTree();
+	void test();
 
 	//线索化
 	void CreatePreThread();
 	void CreateInThread();
 	void CreatePostThread();
+
+	//遍历线索二叉树
+	void Pretraversal() const;
+	void Intraversal() const;
+	void Posttraversal() const;
 };
 
 #endif THREADBTREE_H_
