@@ -130,6 +130,7 @@
     <ClCompile Include="Btree.cpp" />
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="MyList.cpp" />
+    <ClCompile Include="Split.cpp" />
     <ClCompile Include="T6121.cpp" />
     <ClCompile Include="T731.cpp" />
     <ClCompile Include="ThreadBTree.cpp" />
@@ -137,6 +138,7 @@
   <ItemGroup>
     <ClInclude Include="Btree.h" />
     <ClInclude Include="MyList.h" />
+    <ClInclude Include="Split.h" />
     <ClInclude Include="T6121.h" />
     <ClInclude Include="T731.h" />
     <ClInclude Include="ThreadBTree.h" />
