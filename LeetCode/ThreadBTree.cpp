@@ -176,9 +176,11 @@ ThreadBTNode* PostFirstNode(ThreadBTNode* T) {
 	//	T = T->Lchild;
 	//if (T->Rtag == 0)
 	//	T = T->Rchild;
+
+	return NULL;
 }
 ThreadBTNode* PostNextNode(ThreadBTNode* T) {
-
+	return NULL;
 }
 void ThreadBTree::Posttraversal() const {
 	for (ThreadBTNode* t = PostFirstNode(this->tbtree); t != NULL; t = PostNextNode(t)) {
