@@ -2,7 +2,8 @@
 #include "Btree.h"
 #include "ThreadBTree.h"
 #include "T731.h"
-#include "Split.h"
+#include "MyList.h"
+#include "ListFunction.h"
 
 using namespace std;
 
@@ -25,5 +26,13 @@ int main()
 		cout << ans[i] << endl;
 	}*/
 
+	MyList* list = new MyList;
+	list->BackCreate();
 
+	int start;
+	int end;
+	cout << "请输入需要反转的组长度：" << endl;
+	cin >> start;
+	list->reverseKGroup(start);
+	list->Output();
 }

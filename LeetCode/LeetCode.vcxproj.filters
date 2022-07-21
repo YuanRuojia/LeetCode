@@ -33,7 +33,7 @@
     <ClCompile Include="MyList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Split.cpp">
+    <ClCompile Include="ListFunction.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -53,7 +53,7 @@
     <ClInclude Include="MyList.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Split.h">
+    <ClInclude Include="ListFunction.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
