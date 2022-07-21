@@ -33,9 +33,6 @@
     <ClCompile Include="MyList.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ListFunction.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="T6121.h">
@@ -51,9 +48,6 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MyList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ListFunction.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

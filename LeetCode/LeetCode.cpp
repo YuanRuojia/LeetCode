@@ -3,7 +3,6 @@
 #include "ThreadBTree.h"
 #include "T731.h"
 #include "MyList.h"
-#include "ListFunction.h"
 
 using namespace std;
 
@@ -26,13 +25,18 @@ int main()
 		cout << ans[i] << endl;
 	}*/
 
-	MyList* list = new MyList;
-	list->BackCreate();
+	MyList* listA = new MyList;
+	listA->BackCreate();
+	MyList* listB = new MyList;
+	listB->BackCreate();
+	MyList* listC = new MyList;
+	listC->BackCreate();
 
-	int start;
-	int end;
-	cout << "请输入需要反转的组长度：" << endl;
-	cin >> start;
-	list->reverseKGroup(start);
+	vector<MyList*> lists;
+	lists.push_back(listA);
+	lists.push_back(listB);
+	lists.push_back(listC);
+	MyList* list = MyList::KListMerge(lists);
+	
 	list->Output();
 }
