@@ -3,6 +3,7 @@
 #include "ThreadBTree.h"
 #include "T731.h"
 #include "MyList.h"
+#include "smartptr.h"
 
 using namespace std;
 
@@ -25,18 +26,10 @@ int main()
 		cout << ans[i] << endl;
 	}*/
 
-	MyList* listA = new MyList;
+	/*MyList* listA = new MyList;
 	listA->BackCreate();
-	MyList* listB = new MyList;
-	listB->BackCreate();
-	MyList* listC = new MyList;
-	listC->BackCreate();
+	listA->deleteDuplicates();
+	listA->Output();*/
 
-	vector<MyList*> lists;
-	lists.push_back(listA);
-	lists.push_back(listB);
-	lists.push_back(listC);
-	MyList* list = MyList::KListMerge(lists);
-	
-	list->Output();
+	smartptr::smartptrtest();
 }

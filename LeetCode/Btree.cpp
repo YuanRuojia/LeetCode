@@ -24,7 +24,7 @@ void _CreateBTree(BiTree& T) {
 	cin.get(data);
 
 	if (data == '#') {											//创建空节点
-		T = nullptr;
+		T = nullptr;	
 	}
 	else {														//创建非空节点
 		T = new BiTNode;

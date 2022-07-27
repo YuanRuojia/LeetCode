@@ -155,6 +155,84 @@ void MyList::reverseKGroup(int k) {
 	}
 }
 
+List MyList::FindKthToTail(int k) {
+	ListNode* p = this->GetList()->next;
+	ListNode* tail = p;
+
+	while (k > 1 && tail) {
+		tail = tail->next;
+		k--;
+	}
+
+	if (!tail) return NULL;		
+
+	while (tail->next) {
+		p = p->next;
+		tail = tail->next;
+	}
+
+	return p;
+}
+
+void MyList::removeNthFromEnd(int n)
+{
+	if (n < 1) {
+		cout << "n非法！" << endl;
+		return;
+	}
+	ListNode* tar = MyList::FindKthToTail(n+1);
+	if (!tar) {
+		cout << "n非法！" << endl;
+		return;
+	}
+
+	ListNode* temp = tar->next;
+	tar->next = temp->next;
+	delete temp;
+}
+
+bool cmp(string a, string b) {
+	int ia = atoi(a.c_str());
+	int ib = atoi(b.c_str());
+	return ia < ib;
+}
+
+void MyList::sortInList()
+{
+	vector<string> datas;
+	ListNode* p = this->L->next;
+
+	while (p) {
+		datas.push_back(p->data);
+		p = p->next;
+	}
+
+	sort(datas.begin(), datas.end(), cmp);
+
+	this->L = nullptr;
+	this->BackCreate(datas);
+}
+
+void MyList::deleteDuplicates()
+{
+	ListNode* p = this->L->next;
+	if (!p) return;
+	if (!p->next) return;
+
+	while (p->next) {
+		if (p->data == p->next->data) {
+			ListNode* temp = p->next;
+			p->next = p->next->next;
+
+			delete temp;
+			temp = NULL;
+		}
+		else {
+			p = p->next;
+		}
+	}
+}
+
 vector<string> MyList::Split(string input, const char delim) {
 	int len = input.length();
 	vector<string> ans;
@@ -224,4 +302,67 @@ MyList* MyList::KListMerge(vector<MyList*> Lists) {
 	}
 
 	return Lists[0];
+}
+
+MyList* MyList::addInList(MyList* A, MyList* B)
+{
+	MyList* SUM = new MyList;
+
+	A->ReverseList();
+	B->ReverseList();
+	ListNode* pA = A->L->next;
+	ListNode* pB = B->L->next;
+
+	int carry = 0;
+	vector<string> sum;
+	while (pA && pB) {
+		int temp = atoi(pA->data.c_str()) + atoi(pB->data.c_str()) + carry;
+		carry = 0;
+		if (temp > 9) {
+			carry = 1;
+			temp %= 10;
+		}
+		sum.push_back(to_string(temp));
+
+		pA = pA->next;
+		pB = pB->next;
+	}
+
+	if (pA) {
+		while (pA) {
+			int temp = atoi(pA->data.c_str()) + carry;
+			carry = 0;
+			if (temp > 9) {
+				carry = 1;
+				temp %= 10;
+			}
+			sum.push_back(to_string(temp));
+			pA = pA->next;
+		}
+	}
+	if (pB) {
+		while (pB) {
+			int temp = atoi(pB->data.c_str()) + carry;
+			carry = 0;
+			if (temp > 9) {
+				carry = 1;
+				temp %= 10;
+			}
+			sum.push_back(to_string(temp));
+			pB = pB->next;
+		}
+	}
+
+	if (carry == 1)
+		sum.push_back("1");
+
+	SUM->BackCreate(sum);
+	SUM->ReverseList();
+
+	delete A;
+	A = nullptr;
+	delete B;
+	B = nullptr;
+
+	return SUM;
 }
