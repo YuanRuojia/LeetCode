@@ -19,7 +19,7 @@ int main()
 	/*T731* time = new T731;
 	time->test();*/
 
-	/*string input;
+	/*string input; 
 	getline(cin, input);
 
 	vector<string> ans = Split::Split(input, ' ');
@@ -34,7 +34,17 @@ int main()
 
 	/*smartptr::smartptrtest();*/
 
-	shared_ptr<smartList<int>> sl(new smartList<int>);
-	sl->backcreate();
-	sl->show();
+	shared_ptr<smartList<int>> intsl(new smartList<int>);
+	intsl->backcreate();
+	intsl->show();
+
+	shared_ptr<smartList<string>> strsl = make_shared<smartList<string>>();
+	strsl->backcreate();
+	strsl->show();
+
+	return 0;
 }
+/*
+1 2 3 4 5
+
+*/
