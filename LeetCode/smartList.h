@@ -2,32 +2,29 @@
 
 #include <memory>
 
+using namespace std;
+
 template <typename T>
 struct smartListNode {
-	smartListNode(const T& x = T())
-		: data(x)
-	{}
-	weak_ptr<smartListNode> next;
-	weak_ptr<smartListNode> prev;
+public:
 	T data;
+	shared_ptr<smartListNode<T>> next;
+	smartListNode() : data(0), next(nullptr) {}
+	smartListNode(T t) : data(t), next(nullptr) {}
 };
 
 template <typename T>
 class smartList
 {
 public:
-	static void Backcreate(shared_ptr<smartListNode<T>> sptr) {
-		cout << "请输入节点，使用空格隔开:" << endl;
-		string input;
-		getline(cin, input);
-		vector<string> nodes = Split(input, ' ');
-
-		for (int i = 0; i < nodes.size(); i++) {
-			shared_ptr<smartListNode<T>> temp(new T);
-
-		}
-	}
-	static void Output(shared_ptr < smartListNode<T> sptr) {
-
-	}
+	smartList();
+	~smartList();
+	void backcreate(); // 尾插法创建链表
+	void insert(int); // 在loc后插入一个节点
+	void append(); // 在尾部添加节点
+	void erase(T); // 删除第一个值为t的节点
+	void show(); // 输出链表
+private:
+	int len;
+	shared_ptr<smartListNode<T>> head;
 };

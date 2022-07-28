@@ -4,6 +4,7 @@
 #include "T731.h"
 #include "MyList.h"
 #include "smartptr.h"
+#include "smartList.h"
 
 using namespace std;
 
@@ -32,4 +33,7 @@ int main()
 	listA->Output();*/
 
 	smartptr::smartptrtest();
+
+	//shared_ptr<smartListNode<int>> intsmartlist(new smartListNode<int>);
+	//smartList<int>::Backcreate(intsmartlist);
 }
