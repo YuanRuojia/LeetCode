@@ -1,9 +1,9 @@
 ﻿#include <iostream>
-#include "Btree.h"
-#include "ThreadBTree.h"
-#include "T731.h"
-#include "MyList.h"
-#include "smartptr.h"
+//#include "Btree.h"
+//#include "ThreadBTree.h"
+//#include "T731.h"
+//#include "MyList.h"
+//#include "smartptr.h"
 #include "smartList.h"
 
 using namespace std;
@@ -32,8 +32,9 @@ int main()
 	listA->deleteDuplicates();
 	listA->Output();*/
 
-	smartptr::smartptrtest();
+	/*smartptr::smartptrtest();*/
 
-	//shared_ptr<smartListNode<int>> intsmartlist(new smartListNode<int>);
-	//smartList<int>::Backcreate(intsmartlist);
+	shared_ptr<smartList<int>> sl(new smartList<int>);
+	sl->backcreate();
+	sl->show();
 }

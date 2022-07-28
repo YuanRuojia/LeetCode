@@ -19,7 +19,14 @@ smartList<T>::~smartList() {
 
 template <typename T>
 void smartList<T>::backcreate() {
-
+	cout << "请输入节点，使用空格隔开: (输入结束请输入Ctrl+Z)" << endl;
+	T in;
+	shared_ptr<smartListNode<T>> p = head;
+	while (cin >> in) {
+		smartListNode temp(in);
+		p->next = temp;
+		p = temp;
+	}
 }
 
 template <typename T>
@@ -39,5 +46,10 @@ void smartList<T>::erase(T tar) {
 
 template <typename T>
 void smartList<T>::show() {
-
+	shared_ptr<smartListNode<T>> p = head->next;
+	while (p) {
+		cout << p->data << " ";
+		p = p->next;
+	}
+	cout << endl;
 }
