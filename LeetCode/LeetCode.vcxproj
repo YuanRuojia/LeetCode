@@ -128,6 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Btree.cpp" />
+    <ClCompile Include="D807.cpp" />
+    <ClCompile Include="D86T1.cpp" />
     <ClCompile Include="LeetCode.cpp" />
     <ClCompile Include="MyList.cpp" />
     <ClCompile Include="smartList.cpp" />
@@ -138,6 +140,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Btree.h" />
+    <ClInclude Include="D807.h" />
+    <ClInclude Include="D86T1.h" />
     <ClInclude Include="MyList.h" />
     <ClInclude Include="smartList.h" />
     <ClInclude Include="smartptr.h" />
