@@ -7,6 +7,7 @@
 #include "smartList.h"
 #include "D86T1.h"
 #include "D807.h"
+#include "L1656.h"
 
 using namespace std;
 
@@ -47,8 +48,16 @@ int main()
 	//vector<int> tasks = { 1,2,1,2,3,1 };
 	//D86T1::taskSchedulerII(tasks, 3);
 
-	vector<int> tasks = { 0,1,4,6,7,10 };
-	D807::arithmeticTriplets(tasks, 3);
+	/*vector<int> tasks = { 0,1,4,6,7,10 };
+	D807::arithmeticTriplets(tasks, 3);*/
+
+	//[3, "ccccc"], [1, "aaaaa"], [2, "bbbbb"], [5, "eeeee"], [4, "ddddd"]
+	L1656* test = new L1656(5);
+	test->insert(3, "ccccc");
+	test->insert(1, "aaaaa");
+	test->insert(2, "bbbbb");
+	test->insert(5, "eeeee");
+	test->insert(4, "ddddd");
 
 	return 0;
 }

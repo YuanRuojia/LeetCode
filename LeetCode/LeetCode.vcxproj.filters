@@ -45,6 +45,9 @@
     <ClCompile Include="D807.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L1656.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="T6121.h">
@@ -72,6 +75,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="D807.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="L1656.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
