@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\LC-Daily">
+      <UniqueIdentifier>{72e71081-36a2-4369-8c07-a79896e478cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\LC-WeekTest">
+      <UniqueIdentifier>{d90eeead-e997-4675-8dc5-159831bf001e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DataStructure">
+      <UniqueIdentifier>{2d82500f-d0dc-4957-892d-b0230a2df9ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LeetCode.cpp">
@@ -48,37 +57,43 @@
     <ClCompile Include="L1656.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L876.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="T6121.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Btree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ThreadBTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="T731.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MyList.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="smartptr.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="smartList.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="L1656.h">
+      <Filter>头文件\LC-Daily</Filter>
     </ClInclude>
     <ClInclude Include="D86T1.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\LC-WeekTest</Filter>
+    </ClInclude>
+    <ClInclude Include="T731.h">
+      <Filter>头文件\LC-WeekTest</Filter>
+    </ClInclude>
+    <ClInclude Include="T6121.h">
+      <Filter>头文件\LC-WeekTest</Filter>
     </ClInclude>
     <ClInclude Include="D807.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\LC-WeekTest</Filter>
     </ClInclude>
-    <ClInclude Include="L1656.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="Btree.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="MyList.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="smartList.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="smartptr.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadBTree.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="L876.h">
+      <Filter>头文件\LC-Daily</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
