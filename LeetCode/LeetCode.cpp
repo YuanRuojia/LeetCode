@@ -8,6 +8,9 @@
 #include "D86T1.h"
 #include "D807.h"
 #include "L1656.h"
+#include "L876.h"
+#include "L121.h"
+#include "L409.h"
 
 using namespace std;
 
@@ -52,12 +55,19 @@ int main()
 	D807::arithmeticTriplets(tasks, 3);*/
 
 	//[3, "ccccc"], [1, "aaaaa"], [2, "bbbbb"], [5, "eeeee"], [4, "ddddd"]
-	L1656* test = new L1656(5);
+	/*L1656* test = new L1656(5);
 	test->insert(3, "ccccc");
 	test->insert(1, "aaaaa");
 	test->insert(2, "bbbbb");
 	test->insert(5, "eeeee");
-	test->insert(4, "ddddd");
+	test->insert(4, "ddddd");*/
+
+	/*L876::TEST();*/
+
+	/*L121* test = new L121();
+	delete(test);*/
+
+	cout << L409::longestPalindrome("abccccdd") << endl;
 
 	return 0;
 }

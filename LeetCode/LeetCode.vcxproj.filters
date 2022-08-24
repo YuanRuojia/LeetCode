@@ -60,6 +60,12 @@
     <ClCompile Include="L876.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L121.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L409.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L1656.h">
@@ -93,6 +99,12 @@
       <Filter>头文件\DataStructure</Filter>
     </ClInclude>
     <ClInclude Include="L876.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L121.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L409.h">
       <Filter>头文件\LC-Daily</Filter>
     </ClInclude>
   </ItemGroup>
