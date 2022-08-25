@@ -66,6 +66,12 @@
     <ClCompile Include="L409.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BinarySearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L733.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L1656.h">
@@ -106,6 +112,12 @@
     </ClInclude>
     <ClInclude Include="L409.h">
       <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>头文件\DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="L733.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

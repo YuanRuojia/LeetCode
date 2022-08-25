@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-//#include "Btree.h"
+#include "Btree.h"
 //#include "ThreadBTree.h"
 //#include "T731.h"
 //#include "MyList.h"
@@ -11,13 +11,21 @@
 #include "L876.h"
 #include "L121.h"
 #include "L409.h"
+#include "BinarySearch.h"
+#include "L733.h"
 
 using namespace std;
 
 int main()
 {
-	/*Btree* btree = new Btree;
-	btree->test();*/
+	//Btree* btree = new Btree;
+	//btree->CreateBTree();
+	//BiTNode* p = new BiTNode;
+	//p->data = "0";
+	//BiTNode* q = new BiTNode;
+	//q->data = "5";
+
+	//cout << btree->lowestCommonAncestor(btree->Getroot(), p, q)->data;
 
 	/*ThreadBTree* tbtree = new ThreadBTree;
 	tbtree->test();*/
@@ -67,7 +75,22 @@ int main()
 	/*L121* test = new L121();
 	delete(test);*/
 
-	cout << L409::longestPalindrome("abccccdd") << endl;
+	/*cout << L409::longestPalindrome("abccccdd") << endl;*/
+
+	/*vector<int> input;
+	int tar;
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		int temp;
+		cin >> temp;
+		input.emplace_back(temp);
+	}
+	cin >> tar;
+	cout<<BinarySearch::search(input, tar);*/
+
+	L733* test = new L733;
+	test->test();
 
 	return 0;
 }

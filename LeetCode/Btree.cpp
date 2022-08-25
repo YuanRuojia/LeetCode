@@ -18,6 +18,11 @@ void Btree::test() {
 	this->LevelOrder();		cout << endl;
 }
 
+BiTNode* Btree::Getroot()
+{
+	return this->tree;
+}
+
 //创建二叉树，#表示空节点，按照前序输入满树
 void _CreateBTree(BiTree& T) {
 	char data;
@@ -177,4 +182,49 @@ void _LevelOrder(BiTree T) {
 }
 void Btree::LevelOrder()  const {
 	_LevelOrder(this->tree);
+}
+
+BiTNode* Btree::lowestCommonAncestor(BiTNode* root, BiTNode* p, BiTNode* q)
+{
+	//620##43##5##87##9##
+
+	vector<BiTNode*> roadp = DFS(root, p);
+	vector<BiTNode*> roadq = DFS(root, q);
+	int i = 0;
+	while (i < roadp.size() && i < roadq.size()) {
+		if (roadp[i]->data != roadq[i]->data) {
+			break;
+		}
+		i++;
+	}
+
+	if (i - 1 < 0)
+		return nullptr;
+	else
+		return roadp[i - 1];
+}
+
+void DFS_Search(BiTNode* node, vector<BiTNode*>& road, BiTNode* tar, bool &sta) {
+	if (sta) return;
+	if (node == nullptr) return;
+
+	road.emplace_back(node);
+	if (node->data == tar->data) {
+		sta = true;
+	}
+	DFS_Search(node->Lchild, road, tar, sta);
+	DFS_Search(node->Rchild, road, tar, sta);
+
+	if(!sta)
+		road.pop_back();
+}
+
+vector<BiTNode*> Btree::DFS(BiTree root, BiTNode* tar)
+{
+	vector<BiTNode*> road;
+	
+	bool sta = false;
+	DFS_Search(root, road, tar, sta);
+
+	return road;;
 }
