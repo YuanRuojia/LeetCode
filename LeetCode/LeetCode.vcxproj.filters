@@ -72,6 +72,30 @@
     <ClCompile Include="L733.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L200.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L253.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L509.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L70.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L746.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L62.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L202.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L54.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L1656.h">
@@ -117,7 +141,31 @@
       <Filter>头文件\DataStructure</Filter>
     </ClInclude>
     <ClInclude Include="L733.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L200.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L253.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L509.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L70.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L746.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L62.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L202.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L54.h">
+      <Filter>头文件\LC-Daily</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

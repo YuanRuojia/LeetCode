@@ -1,18 +1,21 @@
 ﻿#include <iostream>
-#include "Btree.h"
+//#include "Btree.h"
 //#include "ThreadBTree.h"
 //#include "T731.h"
 //#include "MyList.h"
 //#include "smartptr.h"
-#include "smartList.h"
-#include "D86T1.h"
-#include "D807.h"
-#include "L1656.h"
-#include "L876.h"
-#include "L121.h"
-#include "L409.h"
-#include "BinarySearch.h"
-#include "L733.h"
+//#include "smartList.h"
+//#include "D86T1.h"
+//#include "D807.h"
+//#include "L1656.h"
+//#include "L876.h"
+//#include "L121.h"
+//#include "L409.h"
+//#include "BinarySearch.h"
+//#include "L733.h"
+#include "L746.h"
+#include "L62.h"
+#include "L202.h"
 
 using namespace std;
 
@@ -89,8 +92,15 @@ int main()
 	cin >> tar;
 	cout<<BinarySearch::search(input, tar);*/
 
-	L733* test = new L733;
-	test->test();
+	/*L733* test = new L733;
+	test->test();*/
+
+	/*vector<int> testcase = {1,100,1,1,1,100,1,1,100,1};
+	cout<<L746::minCostClimbingStairs(testcase);*/
+
+	//cout << L62::uniquePaths(3, 7);
+
+	cout << L202::isHappy(19);
 
 	return 0;
 }
