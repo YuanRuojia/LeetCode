@@ -13,9 +13,11 @@
 //#include "L409.h"
 //#include "BinarySearch.h"
 //#include "L733.h"
-#include "L746.h"
-#include "L62.h"
-#include "L202.h"
+//#include "L746.h"
+//#include "L62.h"
+//#include "L202.h"
+//#include "L54.h"
+#include "L14.h"
 
 using namespace std;
 
@@ -100,7 +102,14 @@ int main()
 
 	//cout << L62::uniquePaths(3, 7);
 
-	cout << L202::isHappy(19);
+	//cout << L202::isHappy(19);
+
+	/*vector<vector<int>> matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+	L54* test = new L54;
+	test->spiralOrder(matrix);*/
+
+	vector<string> input = { "dog","racecar","car" };
+	cout << L14::longestCommonPrefix(input);
 
 	return 0;
 }

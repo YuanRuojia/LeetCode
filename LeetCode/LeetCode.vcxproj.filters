@@ -96,6 +96,15 @@
     <ClCompile Include="L54.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L1706.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L14.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L43.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L1656.h">
@@ -166,6 +175,15 @@
     </ClInclude>
     <ClInclude Include="L54.h">
       <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L1706.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L14.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L43.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
