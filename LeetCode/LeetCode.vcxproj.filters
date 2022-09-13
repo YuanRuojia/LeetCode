@@ -105,6 +105,21 @@
     <ClCompile Include="L43.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="L2131.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L621.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L1592.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L108.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="L417.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="L1656.h">
@@ -183,6 +198,21 @@
       <Filter>头文件\LC-Daily</Filter>
     </ClInclude>
     <ClInclude Include="L43.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L2131.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L621.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L108.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L1592.h">
+      <Filter>头文件\LC-Daily</Filter>
+    </ClInclude>
+    <ClInclude Include="L417.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
